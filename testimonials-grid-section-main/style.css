@@ -1,0 +1,144 @@
+/*body {
+    max-width: 900px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.main-right {
+    max-width: 24%;
+    margin: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.top-left {
+    background-color: hsl(263, 55%, 52%);
+    max-width: 65%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.name-img {
+    display: flex;
+}*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#main-grid {
+    padding: 5% 3%;
+}
+#top-left {
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+#top-right {
+    background-color: #48556a;
+    color: #ffffff;
+}
+
+#bottom-left, #main-right {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+#bottom-right {
+    background-color: #19212e;
+    color: #ffffff;
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    box-sizing: 1px 1px 2px 1px rgba(0,0,0,0.2);
+    font-size: 13px;
+}
+
+.grid-item p {
+    opacity: 70%;
+}
+
+.name-img {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+}
+.head-text .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+img {
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #7541c8;
+}
+.grid-item h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#quote {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    z-index: -1;
+}
+
+@media (min-width: 576px) {
+    #grid-main,
+    #main-left,
+    #top,
+    #bottom {
+        display: flex;
+    }
+    #top, #bottom {
+        flex-basis: 50%;
+    }
+    #top-left, #buttom-right {
+        flex-basis: 65%;
+    }
+    #top-right, #buttom-left {
+        flex-basis: 35%;
+    }
+    #grid-main {
+        max-width: 1440px;
+        margin: 0 auto;
+        justify-content: space-between;        
+    }
+    #main-right {
+        flex-basis: 20%
+    }
+    #main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+    #main-left .grid-item {
+        margin-right: 15px;
+    }
+}
